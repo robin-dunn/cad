@@ -2,18 +2,30 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Debug with Make",
+            "name": "Debug C++ Program",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/main",
+            "program": "${workspaceFolder}/build/test",
             "args": [],
             "stopAtEntry": false,
-            "cwd": "${workspaceFolder}",
+            "cwd": "${workspaceFolder}/build",
             "environment": [],
             "externalConsole": false,
             "MIMode": "lldb",
-            "preLaunchTask": "make",
-            "targetArchitecture": "arm64"
+            "preLaunchTask": "Build Project"
+        },
+        {
+            "name": "Run Without Debugging",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/test",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}/build",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "lldb",
+            "preLaunchTask": "Build Project"
         }
     ]
 }

@@ -1,0 +1,8 @@
+{
+  "files.associations": {
+    "*.hxx": "cpp",
+    "*.txx": "cpp"
+  },
+  "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
+  "cmake.buildDirectory": "${workspaceFolder}/build"
+}
